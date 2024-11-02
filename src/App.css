@@ -1,34 +1,34 @@
 /* Base styles */
 .App {
   text-align: center;
-  background-color: #2E1A47; /* Dark blue background */
+  background-color: #2E1A47;
   font-family: 'Times New Roman', serif;
-  color: #FFFFFF; /* White text color by default */
+  color: #FFFFFF;
 }
 
 .App-nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #3E2B5C; /* Slightly lighter dark blue for the navbar */
+  background-color: #3E2B5C;
   padding: 10px 0;
   display: flex;
   justify-content: center;
   gap: 30px;
-  z-index: 1000; /* Keep navbar above other elements */
+  z-index: 1000;
 }
 
 .App-nav a {
-  color: #FFD700; /* Yellow for the navbar links */
+  color: #FFD700;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 8px 15px;
   transition: color 0.3s;
 }
 
 .App-nav a:hover {
-  color: #FFA500; /* Orange on hover */
+  color: #FFA500;
 }
 
 .App-header {
@@ -37,27 +37,26 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding-top: 40px; /* Offset content for fixed navbar */
+  padding-top: 60px;
 }
 
 h1 {
   font-size: 6em;
   font-weight: bold;
-  color: #FFD700; /* Yellow for the title */
+  color: #FFD700;
   margin: 0;
 }
 
 .event-details {
   font-size: 2em;
-  color: #FFA500; /* Orange color for event details */
-  margin-top: 5px; /* Reduced margin for less space */
+  color: #FFA500;
+  margin-top: 5px;
 }
 
 .countdown {
-  background-color: #3E2B5C; /* Slightly lighter shade of dark blue for countdown background */
-  border-radius: 50px;
-  padding: 25px;
-  padding-top: 30px;
+  background-color: #3E2B5C;
+  border-radius: 30px;
+  padding: 20px;
   margin-top: 20px;
   display: flex;
   gap: 20px;
@@ -72,88 +71,89 @@ h1 {
 .time-number {
   font-size: 6em;
   font-weight: bold;
-  color: #FFD700; /* Yellow for countdown numbers */
-  margin: 10px;
+  color: #FFD700;
+  margin: 10px 0;
 }
 
 .time-label {
   font-size: 1.5em;
-  color: #FFA500; /* Orange for countdown labels */
-  margin-top: 5px;
+  color: #FFA500;
+  margin-top: 3px;
 }
 
 .intro-message {
   font-size: 1.5em;
-  color: #FFD700; /* Yellow for emphasis */
-  margin-top: -30px;
+  color: #FFD700;
+  margin-top: 10px;
   max-width: 800px;
-  padding: 5px 5px;
+  padding: 10px;
   text-align: center;
 }
 
 .join-link {
-  color: #FFD700; /* Yellow color for link */
+  color: #FFD700;
   font-weight: bold;
   text-decoration: underline;
   transition: color 0.3s;
 }
 
 .join-link:hover {
-  color: #FFA500; /* Orange color on hover */
+  color: #FFA500;
 }
 
-/* Responsive styling for small screens */
-@media (max-width: 740px) {
+/* Responsive styling for screens up to 768px */
+@media (max-width: 768px) {
   .App-nav a {
-    font-size: 1em; /* Smaller nav links */
-    padding: 8px 12px;
-  }
-
-  .App-header {
-    padding-top: 60px; /* More padding for mobile header */
+    font-size: 1em;
+    padding: 8px 10px;
   }
 
   h1 {
-    font-size: 3em; /* Smaller title font */
+    font-size: 4em;
   }
 
   .event-details {
-    font-size: 1.2em; /* Adjust details text size */
+    font-size: 1.5em;
   }
 
   .countdown {
-    flex-direction: column; /* Stack time units vertically on smaller screens */
+    flex-direction: row; /* Keep countdown in row format */
     padding: 15px;
-    gap: 15px;
+    gap: 10px;
   }
 
   .time-number {
-    font-size: 3em; /* Smaller countdown numbers */
-    margin: 5px;
+    font-size: 4em;
   }
 
   .time-label {
-    font-size: 1em; /* Adjust countdown labels */
-  }
-
-  .intro-message {
-    font-size: 1.2em; /* Smaller message text */
-    padding: 10px;
-  }
-}
-
-/* Additional adjustments for very small screens (e.g., iPhone SE) */
-@media (max-width: 375px) {
-  h1 {
-    font-size: 2.5em;
-  }
-
-  .event-details {
     font-size: 1em;
   }
 
+  .intro-message {
+    font-size: 1.2em;
+    max-width: 90%;
+    padding: 8px;
+  }
+}
+
+/* Target iPhone 13 Pro and similar screen sizes (up to 390px width) */
+@media (max-width: 390px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .event-details {
+    font-size: 1.2em;
+  }
+
+  .countdown {
+    padding: 10px;
+    gap: 8px;
+  }
+
   .time-number {
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
   .time-label {
@@ -162,5 +162,7 @@ h1 {
 
   .intro-message {
     font-size: 1em;
+    max-width: 85%;
+    padding: 8px;
   }
 }
