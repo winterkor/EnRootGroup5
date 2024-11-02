@@ -35,7 +35,7 @@ function App() {
         <h1>Mini Sports League 2024</h1>
         <p className="event-details">Think Tank 6 (1.408) | 6 November | 18:30 - 20:45</p>
         <p className="intro-message">
-          ready to conquer the leaderboard and win big? <a href="https://forms.office.com/r/wP17jdj2Ep" target="_blank" rel="noopener noreferrer" className="join-link">Join us</a> for the Mini Sports League 2024 and bring your A-game!
+          Ready to conquer the leaderboard and win big? <a href="https://forms.office.com/r/wP17jdj2Ep" target="_blank" rel="noopener noreferrer" className="join-link">Join us</a> for the Mini Sports League 2024 and bring your A-game!
         </p>
         <div className="countdown">
           <div className="time-unit">
