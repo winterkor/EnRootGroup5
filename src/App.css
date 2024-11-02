@@ -103,7 +103,7 @@ h1 {
 }
 
 /* Responsive styling for small screens */
-@media (max-width: 768px) {
+@media (max-width: 740px) {
   .App-nav a {
     font-size: 1em; /* Smaller nav links */
     padding: 8px 12px;
