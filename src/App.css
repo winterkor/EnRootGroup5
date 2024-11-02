@@ -1,38 +1,102 @@
 .App {
   text-align: center;
+  background-color: #2E1A47; /* Dark blue background */
+  font-family: 'Times New Roman', serif;
+  color: #FFFFFF; /* White text color by default */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3E2B5C; /* Slightly lighter dark blue for the navbar */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  z-index: 1000; /* Keep navbar above other elements */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-nav a {
+  color: #FFD700; /* Yellow for the navbar links */
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.App-nav a:hover {
+  color: #FFA500; /* Orange on hover */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  padding-top: 40px; /* Offset content for fixed navbar */
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 6em;
+  font-weight: bold;
+  color: #FFD700; /* Yellow for the title */
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.event-details {
+  font-size: 2em;
+  color: #FFA500; /* Orange color for event details */
+  margin-top: 10px;
+}
+
+.countdown {
+  background-color: #3E2B5C; /* Slightly lighter shade of dark blue for countdown background */
+  border-radius: 50px;
+  padding: 25px;
+  padding-top: 30px;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-number {
+  font-size: 6em;
+  font-weight: bold;
+  color: #FFD700; /* Yellow for countdown numbers */
+  margin: 10px;
+}
+
+.time-label {
+  font-size: 1.5em;
+  color: #FFA500; /* Orange for countdown labels */
+  margin-top: 5px;
+}
+
+.intro-message {
+  font-size: 1.5em;
+  color: #FFD700; /* Yellow for emphasis */
+  margin-top: -30px;
+  max-width: 800px;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.join-link {
+  color: #FFD700; /* Yellow color for link */
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.join-link:hover {
+  color: #FFA500; /* Orange color on hover */
 }
