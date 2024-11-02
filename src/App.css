@@ -1,3 +1,4 @@
+/* Base styles */
 .App {
   text-align: center;
   background-color: #2E1A47; /* Dark blue background */
@@ -49,7 +50,7 @@ h1 {
 .event-details {
   font-size: 2em;
   color: #FFA500; /* Orange color for event details */
-  margin-top: 10px;
+  margin-top: 5px; /* Reduced margin for less space */
 }
 
 .countdown {
@@ -99,4 +100,67 @@ h1 {
 
 .join-link:hover {
   color: #FFA500; /* Orange color on hover */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+  .App-nav a {
+    font-size: 1em; /* Smaller nav links */
+    padding: 8px 12px;
+  }
+
+  .App-header {
+    padding-top: 60px; /* More padding for mobile header */
+  }
+
+  h1 {
+    font-size: 3em; /* Smaller title font */
+  }
+
+  .event-details {
+    font-size: 1.2em; /* Adjust details text size */
+  }
+
+  .countdown {
+    flex-direction: column; /* Stack time units vertically on smaller screens */
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .time-number {
+    font-size: 3em; /* Smaller countdown numbers */
+    margin: 5px;
+  }
+
+  .time-label {
+    font-size: 1em; /* Adjust countdown labels */
+  }
+
+  .intro-message {
+    font-size: 1.2em; /* Smaller message text */
+    padding: 10px;
+  }
+}
+
+/* Additional adjustments for very small screens (e.g., iPhone SE) */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .event-details {
+    font-size: 1em;
+  }
+
+  .time-number {
+    font-size: 2.5em;
+  }
+
+  .time-label {
+    font-size: 0.9em;
+  }
+
+  .intro-message {
+    font-size: 1em;
+  }
 }
