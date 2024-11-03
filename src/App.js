@@ -33,7 +33,7 @@ function App() {
       </nav>
       <header className="App-header">
         <h1>Mini Sports League 2024</h1>
-        <p className="event-details">Think Tank 6 (1.408) | 6 November | 18:30 - 20:45</p>
+        <p className="event-details"> 6 November | 18:30 - 20:45</p>
         <p className="intro-message">
           Ready to conquer the leaderboard and win big? <a href="https://forms.office.com/r/wP17jdj2Ep" target="_blank" rel="noopener noreferrer" className="join-link">Join us</a> for the Mini Sports League 2024 and bring your A-game!
         </p>
@@ -56,6 +56,25 @@ function App() {
           </div>
         </div>
       </header>
+      
+      {/* Locations Section */}
+      <section className="locations">
+        <h2>Activity Locations</h2>
+        <div className="location-container">
+          <div className="location-item">
+            <img src="/TT6.jpg" alt="Think Tank 6" className="location-image" />
+            <p className="location-description">Think Tank 6 (1.408) </p>
+          </div>
+          <div className="location-item">
+            <img src="/TT21.jpg" alt="Think Tank 21" className="location-image" />
+            <p className="location-description">Think Tank 21 (2.31)</p>
+          </div>
+          <div className="location-item">
+            <img src="/campus_plaza.jpg" alt="Campus Plaza" className="location-image" />
+            <p className="location-description">Campus Plaza (Around Instarchef)</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
