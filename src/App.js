@@ -67,11 +67,11 @@ function App() {
           </div>
           <div className="location-item">
             <img src="/TT21.jpg" alt="Think Tank 21" className="location-image" />
-            <p className="location-description">Think Tank 21 (2.31)</p>
+            <p className="location-description">Think Tank 21 (2.310)</p>
           </div>
           <div className="location-item">
             <img src="/campus_plaza.jpg" alt="Campus Plaza" className="location-image" />
-            <p className="location-description">Campus Plaza (Around Instarchef)</p>
+            <p className="location-description">Campus Plaza (Near Instarchef)</p>
           </div>
         </div>
       </section>
